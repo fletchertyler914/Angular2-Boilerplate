@@ -1,7 +1,7 @@
 import { Component } from 'angular2/core';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
 import { HomeComponent } from './home/home.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { FormComponent } from './form/form.component';
 
 
 @Component({
@@ -10,7 +10,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     <h1>{{title}}</h1>
     <nav>
       <a [routerLink]="['Home']">Home</a>
-      <a [routerLink]="['Dashboard']">Dashboard</a>
+      <a [routerLink]="['Form']">Form</a>
     </nav>
     <hr><br>
     <router-outlet></router-outlet>
@@ -29,9 +29,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     useAsDefault: true
   },
   {
-    path: '/dashboard',
-    name: 'Dashboard',
-    component: DashboardComponent,
+    path: '/form',
+    name: 'Form',
+    component: FormComponent,
   }
 ])
 export class AppComponent {

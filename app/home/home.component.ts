@@ -13,8 +13,4 @@ export class HomeComponent  {
     private _router: Router) {
   }
 
-//  gotoDetail() {
-//    let link = ['HeroDetail'];
-//    this._router.navigate(link);
-//  }
 }

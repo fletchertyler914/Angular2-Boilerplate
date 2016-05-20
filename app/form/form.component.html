@@ -1,0 +1,52 @@
+<h1>Form Page</h1>
+<div class="grid grid-pad">
+  <p>
+    Form Page Test Paragraph
+  </p>
+</div>
+
+<section class="form">
+    <form #form="ngForm" (ngSubmit)="onSubmit()">
+
+        <div class="formItem">
+          <div class="formLabel">
+            <label>First Name:</label>
+          </div>
+          <div class="formInput">
+            <input type="text" [(ngModel)]="vm.firstName" required class="formInputInput">
+          </div>
+        </div>
+
+        <div class="formItem">
+          <div class="formLabel">
+            <label>Last Name:</label>
+          </div>
+          <div class="formInput">
+            <input type="text" [(ngModel)]="vm.lastName" required class="formInputInput">
+          </div>
+        </div>
+
+        <div class="formItem">
+          <div class="formLabel">
+            <label>Email:</label>
+          </div>
+          <div class="formInput">
+            <input type="email" [(ngModel)]="vm.email" required class="formInputInput">
+          </div>
+        </div>
+
+        <div class="formItem">
+          <div class="formLabel">
+            <label>Password:</label>
+          </div>
+          <div class="formInput">
+            <input type="password" [(ngModel)]="vm.password" required class="formInputInput">
+          </div>
+        </div>
+
+        <div class="formButtonContainer">
+          <button type="submit" [disabled]="!form.valid" class="formButton">Submit</button>
+        </div>
+
+    </form>
+</section>
