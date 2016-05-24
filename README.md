@@ -2,6 +2,7 @@
 This is a VERY basic starting point for an Angular 2 project. 
 
 #Install
-Clone & CD<br>
-Run NPM install <br>
-Smile
+clone & cd into project directory<br>
+$ npm install<br>
+$ npm start<br>
+Smile & Code :)
